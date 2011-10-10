@@ -36,18 +36,17 @@ Or clone from:
 2. Initialise scrollspy in your document.onload, e.g.:
 
         <script type='text/javascript'>
-         $(function() {
-	       $('.topbar').scrollspy({
-	           min: 20, 
-	           max: window.height(), 
-	           onEnter: function(element, position){
-	               $(element).css('position', 'fixed');
-	           },
-	           onLeave: function(element, position){
-	               $(element).css('position', 'relative')
-	           }
-	           });
-	     });
+	        $(document).ready(function() {
+        			$('#sticky-navigation').scrollspy({
+    					min: $('#nav').offset().top,
+    					onEnter: function(element, position) {
+    						$("#nav").addClass('fixed');
+    					},
+    					onLeave: function(element, position) {
+    						$("#nav").removeClass('fixed');
+    					}
+        			});
+        		});
         </script>
 
 Check out the /examples for more info !
@@ -55,23 +54,28 @@ Check out the /examples for more info !
 ## Documentation:
 
 Options for ScrollSpy include:
+
     min: (defaults to 0) The minimum value of the X or Y coordinate, depending on mode.
     max: (defaults to 0) The maximum value of the X or Y coordinate, depending on mode.
     mode: (defaults to 'vertical') Defines whether to listen to X or Y scrolling.
     container: (defaults to window) The element whose scrolling to listen to.
 
 Events for ScrollSpy include:
+
     scrollTick: Fires on each scroll event within the min and max parameters. Receives as parameters:
+    
         position: an object with the current X and Y position.
         inside: a Boolean value for whether or not the user is within the min and max parameters
         enters: the number of times the min / max has been entered.
         leaves: the number of times the min / max has been left.
+    
     scrollEnter: Fires every time the user enters the min / max zone.
-        position: an object with the current X and Y position.
-        enters: the number of times the min / max has been entered.
+            position: an object with the current X and Y position.
+            enters: the number of times the min / max has been entered.
+    
     scrollLeave: Fires every time the user leaves the min / max zone.
-        position: an object with the current X and Y position.
-        leaves: the number of times the min / max has been left.
+            position: an object with the current X and Y position.
+            leaves: the number of times the min / max has been left.
 
 
 ## A note on forking:

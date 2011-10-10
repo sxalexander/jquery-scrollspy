@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>JQuery Scrollspy demo</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le styles -->
+    <link href="bootstrap.css" rel="stylesheet">
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.js"></script>
+	<script type="text/javascript" src="../jquery-scrollspy.js"></script>
+	
+    <style type="text/css">
+    
+      /* Override some defaults */
+      html, body {
+        background-color: #eee;
+      }
+
+      .container > footer p {
+        text-align: center; /* center align it with the container */
+      }
+
+      /* The white background content wrapper */
+      .content {
+        background-color: #fff;
+        padding: 20px;
+        -webkit-border-radius: 0 0 6px 6px;
+           -moz-border-radius: 0 0 6px 6px;
+                border-radius: 0 0 6px 6px;
+        -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.15);
+           -moz-box-shadow: 0 1px 2px rgba(0,0,0,.15);
+                box-shadow: 0 1px 2px rgba(0,0,0,.15);
+      }
+
+      /* Styles you shouldn't keep as they are for displaying this base example only */
+      .content .span15,
+      .content .span4 {
+        min-height: 500px;
+      }
+
+
+      /* Page header tweaks */
+      .page-header, #nav {
+        background-color: #ddd;
+        padding: 20px 20px 10px;
+        margin: -20px -20px 20px;
+      }
+      #nav{
+          width: 900px;
+          clear:both;
+          overflow:auto;
+          background-color: #f5f5f5;
+          width: ;
+      }
+      form{
+          margin: 5px 0;
+          
+      }
+      #nav .pills, #nav form{
+          margin-bottom: 0;
+      }
+      
+      #nav.fixed{
+          position: fixed;
+          margin: 0 0 0 -20px;
+          top: 0;
+          box-shadow: 0 4px 8px -6px #000;
+      }
+      #nav.fixed + * {
+          padding-top: 70px;
+      }
+    </style>
+
+  </head>
+
+  <body>
+
+      <div class="container">
+
+      <div class="content">
+      <div class="page-header">
+        <h1>Here's some text content before the navigation</h1>
+      </div>
+      <div id="nav">
+        <ul class="pills pull-left">
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#help">Help</a></li>
+        </ul>
+        <form action="" class="pull-right">
+          <input class="input-small" type="text" placeholder="Username">
+          <input class="input-small" type="password" placeholder="Password">
+          <button class="btn" type="submit">Sign in</button>
+        </form>
+      </div>
+        <div class="row">
+          <div class="span15">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nihil opus est exemplis hoc facere longius. In his igitur partibus duabus nihil erat, quod Zeno commutare gestiret. Duo Reges: constructio interrete. Quid nunc honeste dicit? Age, inquies, ista parva sunt. Si id dicis, vicimus. </p>
+
+              <p>Primum quid tu dicis breve? Nam ista vestra: Si gravis, brevis; Tollenda est atque extrahenda radicitus. <b>Recte dicis;</b> <b>Est enim effectrix multarum et magnarum voluptatum.</b> Vide ne ista sint Manliana vestra aut maiora etiam, si imperes quod facere non possim. Qua tu etiam inprudens utebare non numquam. Atque haec ita iustitiae propria sunt, ut sint virtutum reliquarum communia. </p>
+
+              <pre>
+              Nam neque virtute retinetur ille in vita, nec iis, qui sine
+              virtute sunt, mors est oppetenda.
+
+              Quid enim ab antiquis ex eo genere, quod ad disserendum
+              valet, praetermissum est?
+              </pre>
+
+
+              <p>Immo videri fortasse. Minime vero istorum quidem, inquit. Pugnant Stoici cum Peripateticis. Sed quot homines, tot sententiae; </p>
+
+              <p><b>Haeret in salebra.</b> Estne, quaeso, inquam, sitienti in bibendo voluptas? Octavio fuit, cum illam severitatem in eo filio adhibuit, quem in adoptionem D. <mark>Scrupulum, inquam, abeunti;</mark> De malis autem et bonis ab iis animalibus, quae nondum depravata sint, ait optime iudicari. Cum id fugiunt, re eadem defendunt, quae Peripatetici, verba. </p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nihil opus est exemplis hoc facere longius. In his igitur partibus duabus nihil erat, quod Zeno commutare gestiret. Duo Reges: constructio interrete. Quid nunc honeste dicit? Age, inquies, ista parva sunt. Si id dicis, vicimus. </p>
+
+              <p>Primum quid tu dicis breve? Nam ista vestra: Si gravis, brevis; Tollenda est atque extrahenda radicitus. <b>Recte dicis;</b> <b>Est enim effectrix multarum et magnarum voluptatum.</b> Vide ne ista sint Manliana vestra aut maiora etiam, si imperes quod facere non possim. Qua tu etiam inprudens utebare non numquam. Atque haec ita iustitiae propria sunt, ut sint virtutum reliquarum communia. </p>
+
+              <pre>
+              Nam neque virtute retinetur ille in vita, nec iis, qui sine
+              virtute sunt, mors est oppetenda.
+
+              Quid enim ab antiquis ex eo genere, quod ad disserendum
+              valet, praetermissum est?
+              </pre>
+
+
+              <p>Immo videri fortasse. Minime vero istorum quidem, inquit. Pugnant Stoici cum Peripateticis. Sed quot homines, tot sententiae; </p>
+
+              <p><b>Haeret in salebra.</b> Estne, quaeso, inquam, sitienti in bibendo voluptas? Octavio fuit, cum illam severitatem in eo filio adhibuit, quem in adoptionem D. <mark>Scrupulum, inquam, abeunti;</mark> De malis autem et bonis ab iis animalibus, quae nondum depravata sint, ait optime iudicari. Cum id fugiunt, re eadem defendunt, quae Peripatetici, verba. </p>
+
+               <h1>Tu enim ista lenius, hic Stoicorum more nos vexat.</h1>
+
+               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dicet pro me ipsa virtus nec dubitabit isti vestro beato M. <a href='http://loripsum.net/' target='_blank'>Sed residamus, inquit, si placet.</a> Si quae forte-possumus. Quid censes in Latino fore? Duo Reges: constructio interrete. Nummus in Croesi divitiis obscuratur, pars est tamen divitiarum. An tu me de L. Quae contraria sunt his, malane? An potest, inquit ille, quicquam esse suavius quam nihil dolere? Itaque in rebus minime obscuris non multus est apud eos disserendi labor. </p>
+
+               <blockquote cite='http://loripsum.net'>
+               	Omne enim animal, simul et ortum est, se ipsum et omnes partes suas diligit duasque, quae maximae sunt, in primis amplectitur, animum et corpus, deinde utriusque partes.
+               </blockquote>
+
+
+               <p>Bonum incolumis acies: misera caecitas. Ego vero volo in virtute vim esse quam maximam; Traditur, inquit, ab Epicuro ratio neglegendi doloris. Quid de Platone aut de Democrito loquar? Inde igitur, inquit, ordiendum est. Philosophi autem in suis lectulis plerumque moriuntur. Quantum Aristoxeni ingenium consumptum videmus in musicis? Qui enim voluptatem ipsam contemnunt, iis licet dicere se acupenserem maenae non anteponere. </p>
+
+               <ul>
+               	<li>Sed quia studebat laudi et dignitati, multum in virtute processerat.</li>
+               	<li>Quae similitudo in genere etiam humano apparet.</li>
+               	<li>Beatus sibi videtur esse moriens.</li>
+               	<li>Odium autem et invidiam facile vitabis.</li>
+               	<li>Commoda autem et incommoda in eo genere sunt, quae praeposita et reiecta diximus;</li>
+               </ul>
+
+
+               <p>Quorum altera prosunt, nocent altera. <a href='http://loripsum.net/' target='_blank'>At, si voluptas esset bonum, desideraret.</a> Haec para/doca illi, nos admirabilia dicamus. Et quidem iure fortasse, sed tamen non gravissimum est testimonium multitudinis. Illa argumenta propria videamus, cur omnia sint paria peccata. Hanc ergo intuens debet institutum illud quasi signum absolvere. </p>
+
+               
+              
+        	<script type="text/javascript">
+	        $(document).ready(function() {
+        			$('#nav').scrollspy({
+    					min: $('#nav').offset().top,
+    					onEnter: function(element, position) {
+    						$("#nav").addClass('fixed');
+    					},
+    					onLeave: function(element, position) {
+    						$("#nav").removeClass('fixed');
+    					}
+        			});
+        		});
+        	</script>
+          </div>
+        </div>
+      </div>
+
+    </div> <!-- /container -->
+
+  </body>
+</html>

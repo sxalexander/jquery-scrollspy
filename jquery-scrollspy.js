@@ -14,7 +14,7 @@
             min: 0,
             max: 0,
             mode: 'vertical',
-            buffer: 50,
+            buffer: 0,
             container: window,
             onEnter: options.onEnter ? options.onEnter : [],
             onLeave: options.onLeave ? options.onLeave : [],
