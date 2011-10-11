@@ -2,7 +2,7 @@
 
 An adaptation of the Mootools Scrollspy ( http://davidwalsh.name/mootools-scrollspy ) plugin for jQuery
 
-(c) 2011 Samuel Alexander (samuel@madewithothers.com)
+(c) 2011 Samuel Alexander (sxalexander@gmail.com)
 
 Released under The MIT License.
 
