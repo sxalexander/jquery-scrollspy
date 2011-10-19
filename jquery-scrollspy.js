@@ -31,18 +31,29 @@
               var mode = o.mode;
               var buffer = o.buffer;
               var enters = leaves = 0;
-              var max = parseInt(o.max);
               var inside = false;
-              
-              /* fix max */
-              if(max == 0){
-                max = (mode == 'vertical') ? $container.height() : $container.width();
-              }
-              
+                            
               /* add listener to container */
               $container.bind('scroll', function(e){
                   var position = {top: $(this).scrollTop(), left: $(this).scrollLeft()};
                   var xy = (mode == 'vertical') ? position.top + buffer : position.left + buffer;
+                  var max = o.max;
+                  var min = o.min;
+                  
+                  /* fix max */
+                  if($.isFunction(o.max)){
+                    max = o.max();
+                  }
+
+                  /* fix max */
+                  if($.isFunction(o.min)){
+                    min = o.min();
+                  }
+
+                  if(max == 0){
+                      max = (mode == 'vertical') ? $container.height() : $container.outerWidth() + $(element).outerWidth();
+                  }
+                  
                   /* if we have reached the minimum bound but are below the max ... */
                   if(xy >= o.min && xy <= max){
                     /* trigger enter event */
