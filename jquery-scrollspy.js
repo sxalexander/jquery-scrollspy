@@ -55,7 +55,7 @@
                   }
                   
                   /* if we have reached the minimum bound but are below the max ... */
-                  if(xy >= o.min && xy <= max){
+                  if(xy >= min && xy <= max){
                     /* trigger enter event */
                     if(!inside){
                        inside = true;
