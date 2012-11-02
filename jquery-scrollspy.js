@@ -3,8 +3,6 @@
  * Author: @sxalexander
  * Licensed under the MIT license
  */
-
-
 ;(function ( $, window, document, undefined ) {
 
     $.fn.extend({
@@ -95,4 +93,4 @@
     })
 
     
-})( jQuery, window );
+})( jQuery, window, document, undefined );
