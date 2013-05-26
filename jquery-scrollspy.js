@@ -14,6 +14,7 @@
             min: 0,
             max: 0,
             mode: 'vertical',
+            namespace: 'scrollspy',
             buffer: 0,
             container: window,
             onEnter: options.onEnter ? options.onEnter : [],
@@ -34,7 +35,7 @@
               var inside = false;
                             
               /* add listener to container */
-              $container.bind('scroll', function(e){
+              $container.bind('scroll.' + o.namespace, function(e){
                   var position = {top: $(this).scrollTop(), left: $(this).scrollLeft()};
                   var xy = (mode == 'vertical') ? position.top + buffer : position.left + buffer;
                   var max = o.max;
