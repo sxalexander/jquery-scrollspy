@@ -1,5 +1,12 @@
 # jquery-scrollspy
 
+### This library is no longer actively supported or maintained.  
+*For similar functionality checkout these other libraries:*
+ * http://janpaepke.github.io/ScrollMagic/
+ * http://pixelcog.github.io/parallax.js/
+
+--
+
 An adaptation of the Mootools Scrollspy ( http://davidwalsh.name/mootools-scrollspy ) plugin for jQuery
 
 (c) 2011 Samuel Alexander (sxalexander@gmail.com)
@@ -83,3 +90,8 @@ Events for ScrollSpy include:
 By forking this project you hereby grant permission for any commits to your fork to be
 merged back into this repository and, with attribution, be released under the terms of
 the MIT License.
+
+## Contributors
+
+*  [rbichon](https://github.com/rbichon)
+*  [ThemisMin](https://github.com/ThemisMin)
