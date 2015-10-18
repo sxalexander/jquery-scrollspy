@@ -95,6 +95,6 @@ the MIT License.
 
 *  [jmocana2](https://github.com/jmocana2)
 *  [clslrns](https://github.com/clslrns)
-*  [allnightlong]https://github.com/allnightlong
-*  [shulard]https://github.com/shulard
-*  [martl]https://github.com/martl
+*  [allnightlong](https://github.com/allnightlong)
+*  [shulard](https://github.com/shulard)
+*  [martl](https://github.com/martl)
