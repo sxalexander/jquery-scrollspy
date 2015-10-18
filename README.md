@@ -93,5 +93,8 @@ the MIT License.
 
 ## Contributors
 
-*  [rbichon](https://github.com/rbichon)
-*  [ThemisMin](https://github.com/ThemisMin)
+*  [jmocana2](https://github.com/jmocana2)
+*  [clslrns](https://github.com/clslrns)
+*  [allnightlong]https://github.com/allnightlong
+*  [shulard]https://github.com/shulard
+*  [martl]https://github.com/martl
