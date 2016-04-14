@@ -2,6 +2,7 @@
 
 ### This library is no longer actively supported or maintained.  
 *For similar functionality checkout these other libraries:*
+ * https://github.com/softwarespot/jquery-scrollspy (actively maintained fork)
  * http://janpaepke.github.io/ScrollMagic/
  * http://pixelcog.github.io/parallax.js/
 
